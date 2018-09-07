@@ -33,14 +33,14 @@ input[type=button].locals {
     color: white;
     cursor: help;
     margin: 9px;
-    border-radius: 5px;
+    border-radius: .5em;
 }
 input[type=button].api {
     background-color: grey;
     color: white;
     font: 12px monospace;
-    border-radius: 6px;
-    padding: 4px 7px;
+    border-radius: .5em;
+    padding: .33em .66em;
     margin: 6px;
     float: right;
 }
@@ -56,7 +56,7 @@ input[type=button].danger {
     color: red;
     border-color: red;
     margin: 9px;
-    border-radius: 5px;
+    border-radius: .5em;
     background-color: transparent;
 }
 input[type=button].danger:hover {
@@ -84,4 +84,19 @@ input[type=button].danger:active {
 }
 .divider:active {
     border-top: 4px solid #888;
+}
+svg.dangerous-button {
+    color: #cb2431;
+    fill: currentColor;
+    vertical-align: middle;
+    cursor: pointer;
+}
+svg.dangerous-button.disabled {
+    color: #aaa;
+    cursor: no-drop;
+}
+svg.dangerous-button:not(.disabled):hover {
+    color: red;
+    background-color: yellow;
+    border-radius: 1em;
 }
